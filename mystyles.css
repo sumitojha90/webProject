@@ -1,0 +1,86 @@
+body {
+background-image: url("wood.jpg");
+background-position: 0%;
+background-repeat: repeat;
+}
+
+p {
+text-shadow: 1px 1px;
+}
+
+a {
+display: inline;
+}
+
+.bordered {
+text-align: center;
+border: 1px solid;
+border-radius: 100px;
+padding: 10px;
+box-shadow: 5px 10px;
+}
+
+.transbox {
+margin: 20px;
+
+border: 2 px black;
+}
+
+#wrapper { width: 100%;
+margin-left: auto;
+margin-right: auto;
+}
+
+header{background-color: green;}
+
+nav { float: left; width: 150px;}
+main { margin-left: 170px; padding:  10px;} 
+footer { background-color: grey; }
+
+nav div ul{
+list-style-image: url(books.ico);
+
+}
+
+nav div ul li a:hover{
+text-decoration: none;
+background-color: blue;
+color: white;
+}
+
+footer a:hover{
+text-decoration: none;
+background-color: blue;
+color: white;
+}
+
+table { margin: auto;
+border: 5px solid #000066;
+width: 600px; }
+		
+td, th { border: 1px solid #000066;
+padding: 0.5em;
+font-family: Arial, sans-serif; }
+
+tr:nth-of-type(odd) { background-color: grey; }
+tr:nth-of-type(even){
+background-color: orange;
+}
+
+form{
+width: 40%;
+background-color: #e6e6ff;
+font-family: Arial, sans-serif;
+padding: 10px 20px;
+margin: 8px 0;
+border: 1px solid #ccc;
+border-radius: 8px;
+box-sizing: border-box;
+}
+
+.scriptGenerated{
+margin: 50px;
+text-align: center;
+border: 2px solid black;
+border-radius: 10px;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>Advanced HR Professionals</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="mystyles.css" />
+</head>
+
+<body>
+
+<script>
+var userName;
+userName = prompt("Please enter your name");
+alert("Hello " + userName);
+</script>
+
+<script type="text/javascript">
+
+var i = 0;
+
+var images = [];
+
+var time = 2000;
+
+images[0] = 'chess.jpg';
+images[1] = 'woman.jpg';
+images[2] = 'hiring.jpg';
+
+//change image
+
+function changeImage(){
+document.slide.src = images[i];
+
+if(i<images.length -1){
+i++;
+} else{ i=0;}
+
+setTimeout("changeImage()", time);
+
+}
+
+window.onload = changeImage;
+
+</script>
+
+<div id="wrapper">
+<header>
+<div>
+<h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-align: center;"> Advanced HR Professionals </h1>
+<h2 style="font-family: Helvetica, Arial, sans-serif;font-size: 20px;text-align: center;">Improve Your Operational Competence</h2>
+</div>
+</header>
+
+<nav class="navbar">
+<div class="transbox">
+<ul>
+<li><a href="index.html">Index</a></li>
+<li><a href="links.html">Links</a></li>
+<li><a href="images.html">Images</a></li>
+<li><a href="contacts.html">Contacts</a></li>
+<li><a href="info.html">Request Information</a></li>
+</ul>
+</div>
+</nav>
+
+<main>
+<div class="transbox">
+<article>
+<h3 style="font-family: Helvetica, Arial, sans-serif;font-size: 20px;text-align: left;">Our Introduction</h3>
+
+<p>As companies are trying to reduce cost and improve operational competence through hiring skilled workforce, Advanced HR Professionals makes it easy for all businesses to hire. We work with the industry leader who’s helping companies prepare for what’s next.</p>
+<p>Our staff is having in-depth knowledge of the hiring needs. We hire certified human resources to be engaged on a requirement basis to enhance existing staff via a contract.</p>
+</article>
+
+<div id="services">
+
+<h3 style="font-family: Helvetica, Arial, sans-serif;font-size: 20px;text-align: left;">Our Services</h3>
+
+<dl>
+<dt><em>Engineering and Technology</em></dt>
+<dd>We are a specialty provider of science, engineering, technology, and communications talent and solutions</dd>
+<dt><em>Professional and Industrial</em></dt>
+<dd>We provide professionals for Office, Finance, Accounting, Industrial and Call Takers as per the requirements.</dd>
+<dt><em>International Acquisition</em></dt>
+<dd>Our offices are located in the United States and Europe.</dd>
+</dl>
+
+</div>
+
+<div id="our_video">
+<h2>Whu us?</h2>
+<video controls="controls" width="550" height="320">
+<source src="recruitment.mp4">
+</video>
+</div>
+
+</div>
+</main>
+
+<div class = "scriptGenerated">
+
+<img name="slide" width="350" height = "350">
+
+
+<h3>The last update date:
+<script>
+document.write(document.lastModified);
+</script>
+</h3>
+
+<h3 id ="daysforsales"> </h3>
+
+<script language="javascript">
+
+function salesDays(){
+var todaysDate = new Date();
+var saleDate = new Date ("January 2, 2021");
+var daysRemaining = saleDate - todaysDate;
+var daysUntil = Math.ceil(daysRemaining/(1000*60*60*24));
+var msg = "There are "+ daysUntil +  " days until the sale!";
+return msg;
+}
+document.getElementById('daysforsales').innerHTML = salesDays();
+</script>
+
+
+<h2>
+<script>
+var quotes = new Array();
+quotes[0]="Nothing we do is more important than hiring people. At the end of the day, you bet on people, not strategies. - Lawrence Bossidy";
+quotes[1]="Employees engage with employers and brands when they’re treated as humans. - Meghan Biro";
+quotes[2]="To win the marketplace, you must first win the workplace. - Doug Conant" ;
+quotes[3]="Train people well enough so they can leave. Treat them well enough so they don’t have to. - Sir Richard Branson" ;
+quotes[4]="Leadership is about giving people a platform for spreading ideas that work. - Seth Godin";
+
+randomNum = Math.floor(Math.random() * 5);
+
+document.write(quotes[randomNum]);
+</script>
+</h2>
+
+</div>
+
+<footer>
+<p><strong>&copy; 2020 Advanced HR Professionals</strong></p>
+<a href="mailto: abc@example.com">Email US</a>
+<a href="links.html">Links Page</a>
+<a href="images.html">Images Page</a>
+</footer>
+</div>
+</body>
+
+</html>

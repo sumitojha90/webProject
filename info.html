@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Request for Information</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="mystyles.css" />
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<header>
+<div>
+<h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-align: center;"> Advanced HR Professionals </h1>
+<h2 style="font-family: Helvetica, Arial, sans-serif;font-size: 20px;text-align: center;">Improve Your Operational Competence</h2>
+</div>
+</header>
+
+<nav class="navbar">
+<div class="transbox">
+<ul>
+<li><a href="index.html">Index</a></li>
+<li><a href="links.html">Links</a></li>
+<li><a href="images.html">Images</a></li>
+<li><a href="contacts.html">Contacts</a></li>
+<li><a href="info.html">Request Information</a></li>
+</ul>
+</div>
+</nav>
+
+<main>
+
+
+<div class ="transbox">
+<h2>Register For Information</h2>
+
+
+
+<form method="post" action="mailto:me@webdevfoundations.net">
+Name: <input type="text" name="username" id="username" required="required"> <br>
+Email: <input type="text" name="email" id="email" required="required"> <br>
+Highest Education: <br>
+<input type="radio" name="education" id="highschool" value="High School"> High School<br>
+<input type="radio" name="education" id="undergraduate" value="Under Graduate"> Under Graduate<br>
+<input type="radio" name="education" id="graduate" value="Graduate"> Graduate<br>
+
+Choose the jobs you are interested in: <br>
+<input type="checkbox" name="IT" id="IT" value="yes"> Information Technology<br>
+<input type="checkbox" name="Accounting" id="Accounting" value="yes"> Accounting<br>
+<input type="checkbox" name="HR" id="HR" value="yes"> Human Resource<br>
+
+Comments:<br>
+<textarea name="comments" id="comments"></textarea><br><br>
+
+<select size="1" name="state" id="state">
+<option>Select your intrerested state to live </option>
+<option value="Texas">Texas</option>
+<option value="Oklahoma">Oklahoma</option>
+<option value="Oregon">Oregon</option>
+</select>
+<br>
+<br>
+<input type="submit">
+<input type="reset"> <br>
+</form>
+
+</div>
+</main>
+
+<div class = "scriptGenerated">
+
+<h3>The last update date:
+<script>
+document.write(document.lastModified);
+</script>
+</h3>
+
+<h3 id ="daysforsales"> </h3>
+
+<script language="javascript">
+
+function salesDays(){
+var todaysDate = new Date();
+var saleDate = new Date ("January 2, 2021");
+var daysRemaining = saleDate - todaysDate;
+var daysUntil = Math.ceil(daysRemaining/(1000*60*60*24));
+var msg = "There are "+ daysUntil +  " days until the sale!";
+return msg;
+}
+document.getElementById('daysforsales').innerHTML = salesDays();
+</script>
+
+<h2>
+<script>
+var quotes = new Array();
+quotes[0]="Nothing we do is more important than hiring people. At the end of the day, you bet on people, not strategies. - Lawrence Bossidy";
+quotes[1]="Employees engage with employers and brands when they’re treated as humans. - Meghan Biro";
+quotes[2]="To win the marketplace, you must first win the workplace. - Doug Conant" ;
+quotes[3]="Train people well enough so they can leave. Treat them well enough so they don’t have to. - Sir Richard Branson" ;
+quotes[4]="Leadership is about giving people a platform for spreading ideas that work. - Seth Godin";
+
+randomNum = Math.floor(Math.random() * 5);
+
+document.write(quotes[randomNum]);
+</script>
+</h2>
+
+</div>
+
+<footer>
+<p><strong>&copy; 2020 Advanced HR Professionals</strong></p>
+<a href="mailto: abc@example.com">Email US</a>
+<a href="links.html">Links Page</a>
+<a href="images.html">Images Page</a>
+</footer>
+</div>
+</body>
+
+</html>

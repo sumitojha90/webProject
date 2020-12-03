@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Links Page</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="mystyles.css" />
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<header>
+<div>
+<h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-align: center;"> Advanced HR Professionals </h1>
+<h2 style="font-family: Helvetica, Arial, sans-serif;font-size: 20px;text-align: center;">Improve Your Operational Competence</h2>
+</div>
+</header>
+
+<nav class="navbar">
+<div class="transbox">
+<ul>
+<li><a href="index.html">Index</a></li>
+<li><a href="links.html">Links</a></li>
+<li><a href="images.html">Images</a></li>
+<li><a href="contacts.html">Contacts</a></li>
+<li><a href="info.html">Request Information</a></li>
+</ul>
+</div>
+</nav>
+
+<main>
+<div class ="transbox">
+<ol class="bordered" style="list-style: none">
+<li><a style="text-decoration: none" href="https://www.smartrecruiters.com/resources/glossary/recruitment/">What is Recruitment?</a></li>
+<li><a style="text-decoration: none" href="https://www.jobhero.com/career-guides/interviews/prep/what-is-a-technical-recruiter">What is a Technical Recruiter?</a></li>
+<li><a style="text-decoration: none" href="https://www.thebalancecareers.com/getting-a-job-through-a-staffing-agency-2063929">How to Get a Job Through a Staffing Agency</a></li>
+<li><a style="text-decoration: none" href="https://squareup.com/us/en/townsquare/basic-labor-laws-how-to-hire-employees-correctly">How to Hire Employees: A Checklist</a></li>
+<li><a style="text-decoration: none" href="https://www.inc.com/larry-kim/the-25-most-in-demand-job-skills-right-now-according-to-linkedin.html">The 25 Most In-Demand Job Skills Right Now</a></li>
+</ol>
+</div>
+</main>
+
+<div class = "scriptGenerated">
+
+<h3>The last update date:
+<script>
+document.write(document.lastModified);
+</script>
+</h3>
+
+<h3 id ="daysforsales"> </h3>
+
+<script language="javascript">
+
+function salesDays(){
+var todaysDate = new Date();
+var saleDate = new Date ("January 2, 2021");
+var daysRemaining = saleDate - todaysDate;
+var daysUntil = Math.ceil(daysRemaining/(1000*60*60*24));
+var msg = "There are "+ daysUntil +  " days until the sale!";
+return msg;
+}
+document.getElementById('daysforsales').innerHTML = salesDays();
+</script>
+
+<h2>
+<script>
+var quotes = new Array();
+quotes[0]="Nothing we do is more important than hiring people. At the end of the day, you bet on people, not strategies. - Lawrence Bossidy";
+quotes[1]="Employees engage with employers and brands when they’re treated as humans. - Meghan Biro";
+quotes[2]="To win the marketplace, you must first win the workplace. - Doug Conant" ;
+quotes[3]="Train people well enough so they can leave. Treat them well enough so they don’t have to. - Sir Richard Branson" ;
+quotes[4]="Leadership is about giving people a platform for spreading ideas that work. - Seth Godin";
+
+randomNum = Math.floor(Math.random() * 5);
+
+document.write(quotes[randomNum]);
+</script>
+</h2>
+
+</div>
+
+<footer>
+<p><strong>&copy; 2020 Advanced HR Professionals</strong></p>
+<a href="mailto: abc@example.com">Email US</a>
+<a href="links.html">Links Page</a>
+<a href="images.html">Images Page</a>
+</footer>
+</div>
+</body>
+
+</html>
